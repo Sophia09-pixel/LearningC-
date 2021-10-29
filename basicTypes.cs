@@ -17,6 +17,7 @@ namespace ConsoleApp2
             Console.WriteLine(n2);
             Console.WriteLine(n3);
             Console.WriteLine(n4);
+            
 
             
           
