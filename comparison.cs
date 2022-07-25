@@ -29,6 +29,7 @@ namespace study5
             Console.WriteLine(c6);
             Console.WriteLine(c7);
             Console.WriteLine(c8);
+            
 
         }
     }
