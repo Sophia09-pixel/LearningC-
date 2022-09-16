@@ -95,9 +95,10 @@ namespace Corporation
                 Console.WriteLine("Digite a CAIXINHA de Adriana");
                 double cx = double.Parse(Console.ReadLine());
                 double totcx = cx * 0.0767;
-                Console.WriteLine($"O total de caixinha foi de{totcx.ToString("F2", CultureInfo.InvariantCulture)}");
+                double totalcaxdi = cx - totcx;
+                Console.WriteLine($"O total de caixinha foi de{totalcaxdi.ToString("F2", CultureInfo.InvariantCulture)}");
 
-                double totaldi = totcx + TotalDi;
+                double totaldi = totalcaxdi + TotalDi;
                 Console.WriteLine($"Logo o TOTAL DA QUINZENA DE ADRIANA FOI DE: R$ {totaldi.ToString("F2", CultureInfo.InvariantCulture)}");
 
 
@@ -116,9 +117,10 @@ namespace Corporation
                 Console.WriteLine("Digite a CAIXINHA de ARLETE");
                 double cxar = double.Parse(Console.ReadLine());
                 double totcxar = cxar * 0.0767;
-                Console.WriteLine($"O total de caixinha foi de{totcx.ToString("F2", CultureInfo.InvariantCulture)}");
+                double totalcaxar = cxar - totcxar;
+                Console.WriteLine($"O total de caixinha foi de{totalcaxar.ToString("F2", CultureInfo.InvariantCulture)}");
 
-                double totalar = totcxar + TotalArlete;
+                double totalar = totalcaxar + TotalArlete;
                 Console.WriteLine($"Logo o TOTAL DA QUINZENA DE ARLETE FOI DE: R$ {totalar.ToString("F2", CultureInfo.InvariantCulture)}");
 
 
@@ -135,12 +137,13 @@ namespace Corporation
                 double lucroJess = jessica * 0.4;
 
 
-                Console.WriteLine("Digite a CAIXINHA de ARLETE");
+                Console.WriteLine("Digite a CAIXINHA de JESSICA");
                 double cxje = double.Parse(Console.ReadLine());
                 double totcxje = cxje * 0.0767;
-                Console.WriteLine($"O total de caixinha foi de{totcx.ToString("F2", CultureInfo.InvariantCulture)}");
+                double totalcaxjes = cxje - totcxje;
+                Console.WriteLine($"O total de caixinha foi de: {totalcaxjes.ToString("F2", CultureInfo.InvariantCulture)}");
 
-                double totalje = totcxje + TotalJessica;
+                double totalje = totalcaxjes + TotalJessica;
                 Console.WriteLine($"Logo o TOTAL DA QUINZENA DE JESSICA FOI DE: R$ {totalje.ToString("F2", CultureInfo.InvariantCulture)}");
 
 
@@ -301,6 +304,18 @@ namespace Corporation
                 Console.WriteLine($"Gasolina: {Gasolina}");
                 Console.WriteLine($"Diesel: {Diesel}");
 
+
+                Console.WriteLine("Digite um número");
+
+
+                int numero = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite um número positivo");
+                int k = int.Parse(Console.ReadLine());
+                if (k <= 10)
+                {
+                    Console.WriteLine(" Tanto numero pra pensar e foi pensar nesse??");
+                }
 
      
 
