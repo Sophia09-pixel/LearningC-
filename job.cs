@@ -305,17 +305,7 @@ namespace Corporation
                 Console.WriteLine($"Diesel: {Diesel}");
 
 
-                Console.WriteLine("Digite um número");
-
-
-                int numero = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("Digite um número positivo");
-                int k = int.Parse(Console.ReadLine());
-                if (k <= 10)
-                {
-                    Console.WriteLine(" Tanto numero pra pensar e foi pensar nesse??");
-                }
+               
 
      
 
