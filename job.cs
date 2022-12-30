@@ -81,9 +81,14 @@ namespace Corporation
            
             }
 
-            if (Data == 15)
+            Console.WriteLine("Para fechamento de quinzena digite: 10");
+            Console.WriteLine("Se não: < ou > 10");
+            int quinzena = int.Parse(Console.ReadLine());
+
+
+            if (quinzena == 10)
             {
-                Console.WriteLine("---- Fechamento da Primeira Quinzena ----");
+                Console.WriteLine("---- Fechamento da Quinzena ----");
 
                 Console.WriteLine("Digite o total de Adriana na quinzena:");
                 double adriana = double.Parse(Console.ReadLine());
@@ -161,55 +166,17 @@ namespace Corporation
 
                 Console.WriteLine($"Seu lucro de comições foi de:{totalLucro.ToString("F2", CultureInfo.InvariantCulture)} ");
 
-                
-            }
 
-
-
-            Console.WriteLine("===========================");
-
-            if (Data >= 30)
+            } else
             {
-                Console.WriteLine("Digite o total de Adriana na quinzena:");
-                double adriana = double.Parse(Console.ReadLine());
-
-                double TotalDi = adriana * 0.6;
-
-                Console.WriteLine($"O Total de Adriana foi: R$ {TotalDi.ToString("F2", CultureInfo.InvariantCulture)}");
-
-                double lucroDi = adriana * 0.4;
-
-                Console.WriteLine($"Seu Lucro foi de: {lucroDi.ToString("F2", CultureInfo.InvariantCulture)}");
-
-                Console.WriteLine("Digite o total de Arlete na quinzena:");
-                double arlete = double.Parse(Console.ReadLine());
-
-                double TotalArlete = arlete * 0.6;
-
-                Console.WriteLine($"O Total de Arlete foi: R$ {TotalArlete.ToString("F2", CultureInfo.InvariantCulture)}");
-
-                double lucroArle = arlete * 0.4;
-
-                Console.WriteLine($"Seu Lucro foi de: {lucroArle.ToString("F2", CultureInfo.InvariantCulture)}");
-
-                Console.WriteLine("Digite o total de Jessica  na quinzena:");
-                double jessica = double.Parse(Console.ReadLine());
-
-                double TotalJessica = jessica * 0.6;
-
-                Console.WriteLine($"O Total de Jessica foi: R$ {TotalJessica.ToString("F2", CultureInfo.InvariantCulture)}");
-
-                double lucroJess = jessica * 0.4;
-
-
-                Console.WriteLine($"Seu Lucro foi de: {lucroJess.ToString("F2", CultureInfo.InvariantCulture)}");
-
-                double totalLucro = lucroDi + lucroArle + lucroJess;
-
-                Console.WriteLine($"Seu lucro de comições foi de:{totalLucro.ToString("F2", CultureInfo.InvariantCulture)} ");
+                Console.WriteLine("Bom fechamento :)");
             }
-           
 
+
+
+            Console.WriteLine("=======");
+            Console.WriteLine("exercicios");
+           
 
             Console.WriteLine("---1---");
 
@@ -307,11 +274,6 @@ namespace Corporation
                 Console.WriteLine($"Alcool: {Alcool}");
                 Console.WriteLine($"Gasolina: {Gasolina}");
                 Console.WriteLine($"Diesel: {Diesel}");
-
-
-                
-
-     
 
             }
         }
