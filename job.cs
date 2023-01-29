@@ -8,11 +8,10 @@ namespace Corporation
         static void Main(string[] args)
 
         {
-            Console.WriteLine("Digite a Data de hoje");
-            int Data = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Vamos Calcular o faturamento de hoje: {Data}");
-
+            DateTime Data = DateTime.Now;
+            Console.WriteLine($"Vamos Calcular o faturamento de hoje:");
+            Console.WriteLine(Data.ToLongDateString());
             Console.WriteLine("Digite o Valor passado na REDE:");
             double CieloBruto = double.Parse(Console.ReadLine());
 
@@ -68,18 +67,15 @@ namespace Corporation
             Console.WriteLine("Digite se seu dia foi legal de 0 a 10");
             int dia1 = int.Parse(Console.ReadLine());
 
-            if (dia1 <= 5 )
+            if (dia1 <= 5)
             {
                 Console.WriteLine("Continue firme e forte");
-            }else
-                Console.WriteLine("VAI DAR TUDO CERTO :D");
-          
-
-            if (Data != 15)
-            {
-                Console.WriteLine("Tenha um ótimo mês :)");
-           
             }
+            else
+                Console.WriteLine("VAI DAR TUDO CERTO :D");
+
+
+
 
             Console.WriteLine("Para fechamento de quinzena digite: 10");
             Console.WriteLine("Se não: < ou > 10");
@@ -167,116 +163,15 @@ namespace Corporation
                 Console.WriteLine($"Seu lucro de comições foi de:{totalLucro.ToString("F2", CultureInfo.InvariantCulture)} ");
 
 
-            } else
+            }
+            else
             {
                 Console.WriteLine("Bom fechamento :)");
             }
 
-
-
-            Console.WriteLine("=======");
-            Console.WriteLine("exercicios");
-           
-
-            Console.WriteLine("---1---");
-
-            Console.WriteLine("Digite um número:");
-            double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-            while (x >= 0.0)
-            {
-                double Raiz = Math.Sqrt(x);
-                Console.WriteLine(Raiz.ToString("F3", CultureInfo.InvariantCulture));
-                Console.Write("Digite outro número: ");
-                x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            }
-            Console.WriteLine("Número Negativo!");
-            Console.WriteLine("----------------------------------");
-
-            Console.WriteLine("Exercicio 1:");
-
-            Console.WriteLine("Digite a Senha:");
-            int Senha = int.Parse(Console.ReadLine());
-
-            while (Senha != 2002)
-            {
-                Console.Write("Senha Inválida!");
-                Console.WriteLine("Tente Novamente: ");
-
-                Senha = int.Parse(Console.ReadLine());
-
-            }
-            Console.WriteLine("Acesso Permitido:");
-            Console.WriteLine("--dasdasasdasd--------------------------------");
-
-            Console.WriteLine("Exercicio 2:");
-
-            Console.WriteLine("Digite Dois Números");
-
-            string[] valores = Console.ReadLine().Split(' ');
-            int X = int.Parse(valores[0]);
-            int y = int.Parse(valores[1]);
-
-            while (X != 0 && y != 0)
-            {
-                if (X > 0 && y > 0)
-                {
-                    Console.WriteLine("primeiro");
-                }
-                else if (X < 0 && y > 0)
-                {
-                    Console.WriteLine("segundo");
-                }
-                else if (X < 0 && y < 0)
-                {
-                    Console.WriteLine("terceiro");
-                }
-                else
-                {
-                    Console.WriteLine("quarto");
-                }
-
-
-                valores = Console.ReadLine().Split(' ');
-                X = int.Parse(valores[0]);
-                y = int.Parse(valores[1]);
-                Console.WriteLine("----------------------------------");
-
-                Console.WriteLine("Exercicio 3");
-
-                int Alcool = 0;
-                int Gasolina = 0;
-                int Diesel = 0;
-
-                Console.WriteLine("Digite qual a sua preferencia para abastecimento:");
-
-                int tipo = int.Parse(Console.ReadLine());
-
-                while (tipo != 4)
-                {
-                    if (tipo == 1)
-                    {
-                        Alcool = Alcool + 1;
-                    }else if (tipo == 2)
-                    {
-                        Gasolina = Gasolina + 1;
-
-                    }else if (tipo == 3) 
-                    {
-                        Diesel = Diesel + 1;
-
-                    }
-
-                    tipo = int.Parse(Console.ReadLine());
-                }
-
-                Console.WriteLine("MUITO OBRIGADO:");
-                Console.WriteLine($"Alcool: {Alcool}");
-                Console.WriteLine($"Gasolina: {Gasolina}");
-                Console.WriteLine($"Diesel: {Diesel}");
-
-            }
         }
     }
-}      
+
+
+}    
     
