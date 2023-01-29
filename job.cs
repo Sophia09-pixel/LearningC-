@@ -64,18 +64,6 @@ namespace Corporation
 
             Console.WriteLine("===========================");
 
-            Console.WriteLine("Digite se seu dia foi legal de 0 a 10");
-            int dia1 = int.Parse(Console.ReadLine());
-
-            if (dia1 <= 5)
-            {
-                Console.WriteLine("Continue firme e forte");
-            }
-            else
-                Console.WriteLine("VAI DAR TUDO CERTO :D");
-
-
-
 
             Console.WriteLine("Para fechamento de quinzena digite: 10");
             Console.WriteLine("Se não: < ou > 10");
